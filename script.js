@@ -108,7 +108,15 @@ function compareFigures(value) {
     attempts--;
     step++;
     attemptsText.textContent = attempts;
-    showModal(`Поздравляем! Вы угадали! Вам потребовалось ${step} попыток!`);
+
+    if(step === 1) {
+      showModal(`Поздравляем! Вы угадали! Вам потребовалось 1 попытка!`);
+    } else if (step > 1 && step <= 4) {
+      showModal(`Поздравляем! Вы угадали! Вам потребовалось ${step} попытки!`);
+    } else if(step >= 5 && step <= 10) {
+      showModal(`Поздравляем! Вы угадали! Вам потребовалось ${step} попыток!`);
+    }
+
     modalMessage.style.backgroundColor = '#ff0000';
     closeModalButton.style.backgroundColor = '#ff0000';
     changebestResult();
