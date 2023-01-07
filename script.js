@@ -77,11 +77,15 @@ function closeModal() {
 function compareFigures(value) {
 
   if(isNaN(value)) {
+    modalMessage.style.backgroundColor = '#ff0000';
+    closeModalButton.style.backgroundColor = '#ff0000';
     showModal('Введите число!');
     return;
   }
 
   if(value > 20 || value < 1) {
+    modalMessage.style.backgroundColor = '#ff0000';
+    closeModalButton.style.backgroundColor = '#ff0000';
     showModal('Число должно находится в пределах от 1 до 20!');
     return;
   }
@@ -117,8 +121,8 @@ function compareFigures(value) {
       showModal(`Поздравляем! Вы угадали! Вам потребовалось ${step} попыток!`);
     }
 
-    modalMessage.style.backgroundColor = '#ff0000';
-    closeModalButton.style.backgroundColor = '#ff0000';
+    modalMessage.style.backgroundColor = '#e3c30d';
+    closeModalButton.style.backgroundColor = '#e3c30d';
     changebestResult();
     startNewGame();
     return;
