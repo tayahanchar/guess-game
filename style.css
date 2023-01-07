@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  max-height: 500px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+}
+
+.button__start {
+  width: 100px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 22px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.button__start:hover {
+  background-color: rgb(228, 59, 59);
+}
+
+
+.title {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.hide-number {
+  position: relative;
+  z-index: 2;
+  left: 450px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.hide-number::placeholder {
+  color: black;
+}
+
+.title::before {
+  content: "";
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 137px;
+  width: 1000px;
+  height: 2px;
+  background-color: white;
+}
+
+
+.subtitle {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  margin: 40px 30px 0 30px;
+  color: white;
+  font-size: 18px;
+}
+
+.content__text {
+  padding-top: 7px;
+}
+
+.hint {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: red;
+}
+
+.arrow {
+  position: absolute;
+  display: none;
+  gap: 20px;
+  top: 180px;
+  left: 280px;
+}
+
+.arrow__img {
+  width: 30px;
+  rotate: -30deg;
+}
+
+.arrow__title {
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+}
+
+.enter {
+  display: none;
+  position: absolute;
+  left: 570px;
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+}
+
+.attempts,
+.best-result {
+  color: red;
+}
+
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.901);
+}
+
+.modal-message {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 420px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.close-modal {
+  position: absolute;
+  top: -21px;
+  right: -23px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}

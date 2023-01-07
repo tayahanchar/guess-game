@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Game</title>
+</head>
+<body>
+  <div class="modal"></div>
+  <div class="modal-message">
+    <p class="message">после ввода числа нажмите Enter</p>
+    <button class="close-modal">x</button>
+  </div>
+
+  <div class="container">
+
+    <button class="button__start">Сначала!</button>
+
+    <h1 class="title">Угадай число!</h1>
+    <div class="arrow">
+      <p class="arrow__title">введите число сюда</p>
+      <img class="arrow__img" src="arrow.svg" alt="">
+    </div>
+    <input class="hide-number" value="" placeholder="???" maxlength="2">
+    <p class="enter">после ввода числа нажмите Enter</p>
+    <p class="subtitle">* Число находится в пределах от 1 до 20</p>
+
+    <div class="content">
+      <p class="content__text">Количество попыток: <span class="attempts"></span></p>
+      <p class="content__text">Ваш лучший результат: <span class="best-result"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
