@@ -1,1 +1,1 @@
-# https://tayahanchar.github.io/guessing-game/
+# https://tayahanchar.github.io/guess-game/
